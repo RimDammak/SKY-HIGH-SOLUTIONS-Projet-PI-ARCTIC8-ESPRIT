@@ -17,6 +17,9 @@ public class Ressource {
     Date Date_ajout;
     String Description;
     Type Type;
+    @Lob
+    private byte[] content;
+
     @ManyToMany(cascade = CascadeType.ALL)
     private Set<Studygroup> Studygroups;
 }

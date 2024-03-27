@@ -28,8 +28,8 @@ public class RessourceRestController {
     }
     // http://localhost:8089/Gestion-ressources/Ressource/add-Ressource
     @PostMapping("/add-Ressource")
-    public Ressource addRessource(@RequestBody Ressource b) {
-        Ressource Ressource = RessourceService.addRessource(b);
+    public Ressource addRessource(@RequestBody Ressource ressource) {
+        Ressource Ressource = RessourceService.addRessource(ressource);
         return Ressource;
     }
     // http://localhost:8089/Gestion-ressources/Ressource/remove-Ressource/{Ressource-id}
@@ -39,8 +39,8 @@ public class RessourceRestController {
     }
     // http://localhost:8089/Gestion-ressources/Ressource/modify-Ressource
     @PutMapping("/modify-Ressource")
-    public Ressource modifyRessource(@RequestBody Ressource b) {
-        Ressource Ressource = RessourceService.modifyRessource(b);
+    public Ressource modifyRessource(@RequestBody Ressource ressource) {
+        Ressource Ressource = RessourceService.modifyRessource(ressource);
         return Ressource;
     }
 

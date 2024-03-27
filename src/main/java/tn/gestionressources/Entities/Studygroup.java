@@ -16,6 +16,7 @@ public class Studygroup {
     long idGroup;
     Date Date_debut;
     String Topic;
+    Level level;
     String Location;
     @ManyToMany(mappedBy = "Studygroups",cascade = CascadeType.ALL)
     private Set<Ressource> Ressources;

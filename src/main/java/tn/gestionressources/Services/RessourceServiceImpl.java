@@ -23,8 +23,8 @@ public class RessourceServiceImpl implements IRessourceService{
     }
 
     @Override
-    public Ressource addRessource(Ressource b) {
-        return RessourceRepository.save(b);
+    public Ressource addRessource(Ressource ressource) {
+        return RessourceRepository.save(ressource);
     }
 
     @Override
