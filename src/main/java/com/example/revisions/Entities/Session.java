@@ -22,6 +22,11 @@ public class Session {
     public  String topic;
     @Enumerated(EnumType.STRING)
     public  Modalite modalite;
+    @ManyToMany(mappedBy = "sessions")
+    private Set<User> users;
+    @ManyToOne
+    @JoinColumn(name="instructor_id", nullable=false)
+    private User instructor;
 
 
 
